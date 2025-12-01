@@ -1,3 +1,8 @@
+# Notes
+- The application is programmed in C and uses libpq to connect to the PostgreSQL service.
+- Ensure you have the postgres service running and link against the libpq header when building
+- NOTE: The application was built and designed for Linux (I developed it on Fedora 43), so it may need some altercations to run it on Windows or Mac.
+
 # 1. Start the PostgreSQL service
 - sudo systemctl start postgresql
 - sudo systemctl status postgresql
@@ -26,3 +31,4 @@ Run DDL.sql and DML.sql
 - make run
 
 # Video Link
+- 
