@@ -11,7 +11,7 @@ typedef struct
 } PSQLconnect;
 
 // PSQL connection helper functions
-PSQLconnect PSQL_ConnectInit(const char* connectionInfo);
+PSQLconnect PSQL_ConnectInit(char* connectionInfo);
 
 void PSQL_ConnectClose(PSQLconnect* connection);
 

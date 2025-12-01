@@ -1,4 +1,7 @@
 #include "psql_trainer.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 // /////////////////////////////
 // TRAINER FUNCTIONS

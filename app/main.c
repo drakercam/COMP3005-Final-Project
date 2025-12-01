@@ -7,7 +7,7 @@
 int main(void)
 {
     // Connect to the database
-    PSQLconnect connection = PSQL_ConnectInit("dbname=mydb user=postgres password-password");
+    PSQLconnect connection = PSQL_ConnectInit("dbname=gymdb user=postgres password=password");
 
     char email[100];
     int userRole = 0;   // 1 = member, 2 = trainer, 3 = admin
@@ -172,8 +172,8 @@ int main(void)
 
             switch (choice)
             {
-                case 1: Admin_BookRoom(&connection, userID); break;
-                case 2: Admin_EquipmentMaintenanceLog(&connection, userID); break;
+                case 1: Admin_BookRoom(&connection); break;
+                case 2: Admin_EquipmentMaintenanceLog(&connection); break;
             }
         }
     }

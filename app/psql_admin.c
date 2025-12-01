@@ -1,10 +1,13 @@
 #include "psql_admin.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 // /////////////////////////////
 // ADMIN FUNCTIONS
 // /////////////////////////////
 
-void Admin_BookRoom(PSQLconnect* connection, int adminID)
+void Admin_BookRoom(PSQLconnect* connection)
 {
     int sessionID;
     int roomID;
@@ -87,7 +90,7 @@ void Admin_BookRoom(PSQLconnect* connection, int adminID)
     PSQL_ClearResult(result);
 }
 
-void Admin_EquipmentMaintenanceLog(PSQLconnect* connection, int adminID)
+void Admin_EquipmentMaintenanceLog(PSQLconnect* connection)
 {
     int choice;
 

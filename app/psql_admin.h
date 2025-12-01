@@ -16,7 +16,7 @@
     - Allow updating the status to resolved
 */
 
-void Admin_BookRoom(PSQLconnect* connection, int adminID);
-void Admin_EquipmentMaintenanceLog(PSQLconnect* connection, int adminID);
+void Admin_BookRoom(PSQLconnect* connection);
+void Admin_EquipmentMaintenanceLog(PSQLconnect* connection);
 
 #endif

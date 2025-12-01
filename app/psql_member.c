@@ -1,4 +1,7 @@
 #include "psql_member.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 // /////////////////////////////
 // MEMBER FUNCTIONS
@@ -7,7 +10,7 @@
 const char* Member_UserRegistration(PSQLconnect* connection)
 {
     char name[100];
-    char email[100];
+    static char email[100];
     char phone[50];
 
     printf("--- Member Registration ---\n");

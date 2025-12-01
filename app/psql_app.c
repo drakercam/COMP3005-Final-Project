@@ -1,4 +1,5 @@
 #include "psql_app.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -6,7 +7,7 @@
 // PSQL FUNCTION HELPERS
 // /////////////////////////////
 
-PSQLconnect PSQL_ConnectInit(const char* connectionInfo)
+PSQLconnect PSQL_ConnectInit(char* connectionInfo)
 {
     PSQLconnect c;
 
