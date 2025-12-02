@@ -45,9 +45,10 @@ const char* Member_UserRegistration(PSQLconnect* connection)
     {
         printf("Registration successful!\n");
         PSQL_ClearResult(result);
+        return email;
     }
 
-    return email;
+    return NULL;
 }
 
 void Member_ProfileUpdate(PSQLconnect* connection, int memberID)

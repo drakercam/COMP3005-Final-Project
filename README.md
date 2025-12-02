@@ -1,3 +1,6 @@
+Cameron Drake
+101325027
+
 # Notes
 - The application is programmed in C and uses libpq to connect to the PostgreSQL service.
 - Ensure you have the postgres service running and link against the libpq header when building
@@ -9,6 +12,7 @@
 
 # 2. Open the Postgres shell
 - sudo -u postgres psql
+- DROP DATABASE gymdb;  // if exists
 - CREATE DATABASE gymdb;
 - \q
 - close and reopen terminal
@@ -31,4 +35,4 @@ Run DDL.sql and DML.sql
 - make run
 
 # Video Link
-- 
+- https://www.youtube.com/watch?v=TtvZ_n6Uj_k

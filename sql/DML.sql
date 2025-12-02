@@ -28,7 +28,7 @@ INSERT INTO trainer (trainerName, trainerEmail, trainerPhone) VALUES
 -- ADMINS TABLE
 -- /////////////////////////////
 
-INSERT INTO trainer (trainerName, trainerEmail, trainerPhone) VALUES
+INSERT INTO admin (adminName, adminEmail, adminPhone) VALUES
 ('Palpatine Admin', 'palps@admin.com', '6138904587');
 
 -- /////////////////////////////

@@ -25,6 +25,11 @@ int main(void)
     if (hasAccount == 'n' || hasAccount == 'N')
     {
         const char* registeredEmail = Member_UserRegistration(&connection);
+        if (registeredEmail == NULL)
+        {
+            printf("That email already exists!\n");
+            return 1;
+        }
         strncpy(email, registeredEmail, sizeof(email));
         email[sizeof(email)-1] = '\0';
     }
@@ -144,6 +149,8 @@ int main(void)
             printf("2. View Schedule\n");
             printf("3. Logout\n");
 
+            printf("Choice: ");
+
             scanf("%d", &choice);
             while ((c = getchar()) != '\n' && c != EOF);
 
@@ -166,6 +173,8 @@ int main(void)
             printf("1. Book Room\n");
             printf("2. Maintenance Log\n");
             printf("3. Logout\n");
+
+            printf("Choice: ");
 
             scanf("%d", &choice);
             while ((c = getchar()) != '\n' && c != EOF);
